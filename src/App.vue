@@ -6,6 +6,7 @@
           <router-link to="/explorers" class="nav-link">Explorers</router-link>
           <router-link to="/add" class="nav-link">Agregar Explorer</router-link>
           <router-link to="/missioncommanders" class="nav-link">Mission Commanders</router-link>
+          <router-link to="/add-mc" class="nav-link">Añadir M. Commander</router-link>
       </div>
     </nav>
     <img src="./assets/header-1.jpg" alt="" style="width: 100%;"><br><br>
