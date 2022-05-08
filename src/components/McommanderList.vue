@@ -20,7 +20,7 @@
         <div>
           <br><label><strong>Nombre:</strong></label> {{ currentCommander.name}}
           <br><label><strong>Username:</strong></label> {{ currentCommander.username}}
-          <br><label><strong>Main Stack:</strong></label> {{ currentCommander.mission}}
+          <br><label><strong>Main Stack:</strong></label> {{ currentCommander.mainStack}}
         </div>
         <router-link :to="'/commander/' + currentCommander.id" class="btn btn-info"> Editar</router-link>
       </div>
