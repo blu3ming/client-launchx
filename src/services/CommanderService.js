@@ -7,6 +7,9 @@ class CommanderService {
   get(id) {
     return http.get(`/missioncommander/${id}`);
   }
+  create(data) {
+    return http.post("/missioncommander", data);
+  }
 }
 
 export default new CommanderService();
