@@ -16,6 +16,11 @@ const routes =  [
     name: "add-explorer",
     component: () => import("./components/AddExplorer")
   }
+  {
+    path: "/missioncommanders",
+    name: "missioncommanders",
+    component: () => import("./components/McommandersList")
+  }
 ];
 const router = createRouter({
   history: createWebHistory(),
