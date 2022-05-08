@@ -79,6 +79,9 @@ export default {
       this.submitted = false;
       this.explorer = {};
     }
+  },
+  mounted() {
+    document.title = "Agregar Explorer | LaunchX";
   }
 };
 </script>

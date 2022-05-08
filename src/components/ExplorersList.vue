@@ -64,6 +64,7 @@ export default {
     }
   },
   mounted() {
+    document.title = "Listado de Explorers | LaunchX";
     this.getAllExplorers();
   }
 };

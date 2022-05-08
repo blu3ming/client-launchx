@@ -77,6 +77,7 @@ export default {
   },
   mounted() {
     this.message = '';
+    document.title = "Editar Explorer | LaunchX";
     this.getExplorer(this.$route.params.id);
   }
 };

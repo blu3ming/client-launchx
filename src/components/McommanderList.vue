@@ -62,6 +62,7 @@ export default {
     }
   },
   mounted() {
+    document.title = "Listado de MissionCommanders | LaunchX";
     this.getAllCommanders();
   }
 };
