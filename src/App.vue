@@ -8,6 +8,7 @@
           <router-link to="/missioncommanders" class="nav-link">Mission Commanders</router-link>
       </div>
     </nav>
+    <img src="./assets/header-1.jpg" alt="" style="width: 100%;"><br><br>
     <div class="container mt-3">
       <router-view />
     </div>
