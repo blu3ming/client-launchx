@@ -11,6 +11,11 @@
     <div class="container mt-3">
       <router-view />
     </div>
+    <footer id="footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <small>Copyright &copy; blu3ming | Josué Cruz 2022</small>
+      </div>
+    </footer>
   </div>
 </template>
 <script>
@@ -24,5 +29,11 @@ export default {
   width: 20%;
   border-radius: 10px;
   margin-right: 20px;
+}
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
 }
 </style>
