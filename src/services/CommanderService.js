@@ -10,6 +10,12 @@ class CommanderService {
   create(data) {
     return http.post("/missioncommander", data);
   }
+  update(id, data) {
+    return http.put(`/missioncommander/${id}`, data);
+  }
+  delete(id) {
+    return http.delete(`/missioncommander/${id}`);
+  }
 }
 
 export default new CommanderService();
