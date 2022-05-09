@@ -1,6 +1,7 @@
 <template>
-<h4>Explorer</h4>
   <div v-if="currentExplorer" class="edit-form">
+    <h4>Explorer</h4>
+    <br>
     <form>
       <div class="form-group">
         <label for="title">Nombre</label>
@@ -85,7 +86,7 @@ export default {
 
 <style>
 .edit-form {
-  max-width: 300px;
+  max-width: 600px;
   margin: auto;
 }
 </style>
