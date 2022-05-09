@@ -22,7 +22,7 @@
       </div>
     </form>
     <button class="btn btn-danger mr-2" @click="deleteCommander">
-      Eliminar M. Commander
+      Eliminar Commander
     </button>
     <button type="submit" class="btn btn-info mr-2" @click="updateCommander">
       Actualizar
