@@ -15,7 +15,7 @@
     </div>
     <footer id="footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
       <div class="container text-center">
-        <small>Copyright &copy; blu3ming | Josué Cruz 2022</small>
+        <small>Copyright 2022 &copy; blu3ming | Josué Cruz</small>
       </div>
     </footer>
   </div>
