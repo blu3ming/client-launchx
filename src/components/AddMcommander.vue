@@ -85,3 +85,10 @@ export default {
   }
 };
 </script>
+
+<style>
+.submit-form {
+  max-width: 600px;
+  margin: auto;
+}
+</style>
