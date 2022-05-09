@@ -22,7 +22,7 @@
           <br><label><strong>Username:</strong></label> {{ currentCommander.username}}
           <br><label><strong>Main Stack:</strong></label> {{ currentCommander.mainStack}}
         </div>
-        <router-link :to="'/commander/' + currentCommander.id" class="btn btn-info"> Editar</router-link>
+        <router-link :to="'/missioncommander/' + currentCommander.id" class="btn btn-info"> Editar</router-link>
       </div>
       <div v-else>
         <br />
