@@ -35,7 +35,7 @@ En resumen, emplea tres componentes en su estructura:
 
 Estos a su vez se conectan por medio de un servicio llamado ExplorerService, el cual hará las consultas a los endpoint de la API en el backend por medio de otro módulo llamado http-common, el cual simplemente contiene la dirección de consulta y protocolos.
 
-2. Nuevo requerimiento
+# 2. Nuevo requerimiento
 
 A este proyecto legado se nos pide incluir un nuevo requerimiento, el cual consiste en primero crear una nueva tabla del lado del backend en la base de datos para ahora guardar la información relacionada con los MissionCommander.
 
@@ -94,7 +94,7 @@ graph TD
 
 Es decir, prácticamente deberemos realizar funcionalidades espejo del proyecto original, pero ahora trabajando única y exclusivamente sobre la información relacionada a los Mission Commander que se encuentre en la base de datos del backend; por esta misma razón, requerimos de un Service independiente del original, ya que este trabajará sobre los endpoints nuevos para el tipo de dato solicitado.
 
-3. Desarrollo (Backend)
+# 3. Desarrollo (Backend)
 
 Para comenzar, se crea la nueva tabla con ayuda de Prisma en el lado del backend. El desarrollo y explicación de este apartado puede encontrarse en el [README](https://github.com/blu3ming/BackEnd-Semana-5-PrismaDB/blob/master/README.md) de dicho repositorio. En resumen, creamos una nueva tabla con los datos solicitados:
 
@@ -141,7 +141,8 @@ Por último, solo creamos los endpoints correspondientes en el servidor API del 
 
 Se creó además un paquete de peticiones para Postman para poder probar estos endpoints y su funcionamiento: [CommandersCRUD.zip](https://github.com/blu3ming/client-launchx/files/8653951/CommandersCRUD.zip)
 
-4. Desarrollo (Frontend)
+# 4. Desarrollo (Frontend)
+
 Ya con el servidor configurado para recibir las peticiones especificadas por los requerimientos, procedemos a crear los componentes descritos en la estructura de proyecto propuesta. Para ello, se sigue una misma metodología para los tres que se requieren:
 
 - Agregar la nueva ruta (URL) en el archivo router.js correspondiente al componente en desarrollo.
@@ -152,7 +153,8 @@ Ya con el servidor configurado para recibir las peticiones especificadas por los
 
 A fin de describir de manera más didáctica ese proceso, solo se detallará el primero de ellos, entendiendo que los otros dos se desarrollan siguiendo la misma metodología.
 
-5. Componente para listar Mission Commanders (McommanderList.vue).
+# 5. Componente para listar Mission Commanders (McommanderList.vue).
+
 Siguiendo la metodología, el primer paso consiste en agregar la nueva ruta en el archivo router.js del proyecto para que VueJS sepa a dónde debe dirigirse cuando este componente sea llamado:
 
 ```javascript
@@ -200,7 +202,8 @@ Con esto finalizado, podemos entonces comprobar la funcionalidad de este nuevo r
 
 Vemos cómo la página web despliega un listado de todos los MissionCommanders que se encuentran en la base de datos, y al seleccionar a uno de ellos, el mismo sitio nos devuelve los datos de dicho Commander.
 
-6. Componente para agregar Mission Commanders (AddMcommander.vue).
+# 6. Componente para agregar Mission Commanders (AddMcommander.vue).
+
 El proceso y la metodología para añadir este nuevo componente es el mismo de antes, por lo que no nos detendremos a analizar paso por paso, solo se mostrarán. Para iniciar, agregamos la nueva ruta al router.js:
 
 ```javascript
@@ -231,7 +234,8 @@ Creamos el componente AddMcommander.vue a semejanza del original para los Explor
 
 ![image](https://user-images.githubusercontent.com/25083316/167470045-32f66adb-6cc3-4227-acf0-6fcbeb4c4bcf.png)
 
-6. Componente para editar y eliminar Mission Commanders (Mcommander.vue).
+# 7. Componente para editar y eliminar Mission Commanders (Mcommander.vue).
+
 Este último componente es el que nos permtirá tanto editar el mainStack del Commander como eliminarlo de la base de datos. Para ello, solo es necesario añadir una ruta en el router.js:
 
 ```javascript
