@@ -1,6 +1,7 @@
 <template>
-<h4>Mission Commander</h4>
   <div v-if="currentCommander" class="edit-form">
+    <h4>Mission Commander</h4>
+    <br>
     <form>
       <div class="form-group">
         <label for="title">Nombre</label>
@@ -85,7 +86,7 @@ export default {
 
 <style>
 .edit-form {
-  max-width: 300px;
+  max-width: 600px;
   margin: auto;
 }
 </style>
