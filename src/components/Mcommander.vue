@@ -22,6 +22,7 @@
         />
       </div>
     </form>
+    <br>
     <button class="btn btn-danger mr-2" @click="deleteCommander">
       Eliminar Commander
     </button>
