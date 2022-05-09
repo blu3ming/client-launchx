@@ -39,7 +39,7 @@
     </div>
     <div v-else>
       <h4> Explorer creado exitosamente. </h4>
-      <button class="btn btn-success" @click="newExplorer">Add</button>
+      <button class="btn btn-success" @click="newExplorer">Agregar</button>
     </div>
   </div>
 </template>
